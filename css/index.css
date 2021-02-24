@@ -1,0 +1,108 @@
+/* 地图 */
+
+.map {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 1px;
+    width: 320px;
+    height: 568px;
+    background: url(../image/开始背景.png);
+}
+
+/* 开始游戏按钮 */
+
+.start {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    margin-left: -75px;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 得分 */
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 20px;
+    font: 700 20px/20px '微软雅黑';
+}
+
+.score span {
+    color: purple;
+}
+
+/* 暂停界面 */
+
+.pause {
+    position: absolute;
+    left: 80px;
+    top: 200px;
+    width: 150px;
+    text-align: center;
+    z-index: 100;
+}
+
+.pause li {
+    background-color: #c4c9ca;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    font: 12px/30px '微软雅黑';
+    cursor: pointer;
+}
+
+.pause li:nth-child(2) {
+    margin: 20px 0;
+}
+
+/* 统计分数界面 */
+
+.end {
+    position: absolute;
+    left: 80px;
+    top: 200px;
+    width: 150px;
+    background-color: #ddd;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+.end div:first-child {
+    height: 30px;
+    font: 700 16px/30px '微软雅黑'
+}
+
+.end #end_score {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    height: 80px;
+    line-height: 80px;
+}
+
+.end div:last-child {
+    height: 50px;
+    line-height: 50px;
+}
+
+.end button {
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
